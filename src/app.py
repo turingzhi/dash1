@@ -20,7 +20,8 @@ import pandas as pd
 
 #df2 = pd.read_csv('taxi2.csv')
 
-df = pd.read_csv('taxi3.csv')
+#df = pd.read_csv('taxi3.csv')
+df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
 
 
 # Merge the DataFrames based on a common column (e.g., 'key_column')
