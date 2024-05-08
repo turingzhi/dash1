@@ -16,7 +16,14 @@ import plotly.express as px
 import pandas as pd
 
 # import the dataset
-df = pd.read_csv('Taxi_Trips_-_2023_20240415.csv')
+df1 = pd.read_csv('taxi1.csv')
+
+df2 = pd.read_csv('taxi2.csv')
+
+
+# Merge the DataFrames based on a common column (e.g., 'key_column')
+# Replace 'key_column' with the actual column(s) you want to use for merging
+df = pd.merge(df1, df2, on='key_column', how='inner')
 #df = df.drop(df.columns[:2], axis=1)
 df = df.drop(['Trip ID', 'Taxi ID', 'Trip End Timestamp','Payment Type','Company','Pickup Centroid Location','Dropoff Centroid  Location','Pickup Census Tract','Dropoff Census Tract'], axis=1)
 # delete rows containing the Nan
