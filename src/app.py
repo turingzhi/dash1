@@ -21,8 +21,10 @@ import pandas as pd
 #df2 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi2.csv")
 
 #df = pd.read_csv('taxi3.csv')
-df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
-
+#df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
+url='https://drive.google.com/file/d/1jj0k_0xVLfBP0o3tqTbr4UBSJh2S-2mU/view?usp=share_link'
+url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+df = pd.read_csv(url)
 
 # Merge the DataFrames based on a common column (e.g., 'key_column')
 # Replace 'key_column' with the actual column(s) you want to use for merging
