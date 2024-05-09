@@ -16,12 +16,12 @@ import plotly.express as px
 import pandas as pd
 
 # import the dataset
-df = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi1.csv")
+#df1 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi1.csv")
 
 #df2 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi2.csv")
 
 #df = pd.read_csv('taxi3.csv')
-#df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
+df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
 
 
 # Merge the DataFrames based on a common column (e.g., 'key_column')
