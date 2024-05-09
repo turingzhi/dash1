@@ -23,7 +23,7 @@ import pandas as pd
 #df = pd.read_csv('taxi3.csv')
 #df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
 
-url='https://drive.google.com/file/d/1x26j8Xt_MoBbuS0DgYMk7UHnkxLdpnmt/view?usp=share_link'
+url='https://drive.google.com/file/d/1x26j8Xt_MoBbuS0DgYMk7UHnkxLdpnmt/view?usp=sharing'
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df = pd.read_csv(url)
 
