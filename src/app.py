@@ -22,7 +22,8 @@ import pandas as pd
 # Define a list of URLs
 urls = [
     'https://drive.google.com/file/d/19-k-w_16gRIvjVCwo6T9aHEN8oEBOd85/view?usp=share_link',
-    'https://drive.google.com/file/d/1nuFo9cavPYC0_bzCrQ2P0xVFw_KvtGVs/view?usp=share_link'
+    'https://drive.google.com/file/d/1nuFo9cavPYC0_bzCrQ2P0xVFw_KvtGVs/view?usp=share_link',
+    'https://drive.google.com/file/d/1iWT7rLqu_V9-IHn3J9F6iIYTHD1G_ILo/view?usp=share_link'
     # Add more URLs as needed
 ]
 
@@ -70,13 +71,21 @@ df['Dropoff Community Area'] = df['Dropoff Community Area'].astype(int)
 df['Trip Start Timestamp'] = pd.to_datetime(df['Trip Start Timestamp'])
 
 
+
 # Create Dash app
 app1 = Dash(__name__)
 
 
 server = app1.server
 # App layout
-app1.layout = html.Div([
+
+app.layout = html.Div([
+    html.Head([
+        html.Link(
+            rel='stylesheet',
+            href='../assets/style.css'
+        )
+    ]),
     html.Div([
         dcc.Slider(
             id='hour-slider',
@@ -87,12 +96,9 @@ app1.layout = html.Div([
             step=1,  # Slider step is 1 hour
         ),
     ], style={'margin': '9px'}),
-    html.Link(
-        rel='stylesheet',
-        href='../assets/style.css'
-    ),
     dcc.Graph(id='map-graph')  # Graph
-], style={'width': '600px', 'height': '400px'})  #   Adjust width and height here
+], style={'width': '600px', 'height': '400px'})  # Adjust width and height here
+
 
 # Callback function, update graph
 @app1.callback(
