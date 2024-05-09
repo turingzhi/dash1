@@ -16,18 +16,18 @@ import plotly.express as px
 import pandas as pd
 
 # import the dataset
-#df1 = pd.read_csv('https://raw.githubusercontent.com/turingzhi/dash1/main/taxi1.csv')
+df1 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi1.csv")
 
-#df2 = pd.read_csv('https://raw.githubusercontent.com/turingzhi/dash1/main/taxi2.csv')
+df2 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi2.csv")
 
 #df = pd.read_csv('taxi3.csv')
-df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
+#df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
 
 
 # Merge the DataFrames based on a common column (e.g., 'key_column')
 # Replace 'key_column' with the actual column(s) you want to use for merging
-#df = pd.concat([df1, df2], ignore_index=True)
-#df = df.drop(df.columns[:2], axis=1)
+df = pd.concat([df1, df2], ignore_index=True)
+df = df.drop(df.columns[:2], axis=1)
 df = df.drop(['Trip ID', 'Taxi ID', 'Trip End Timestamp','Payment Type','Company','Pickup Centroid Location','Dropoff Centroid  Location','Pickup Census Tract','Dropoff Census Tract'], axis=1)
 # delete rows containing the Nan
 df = df.dropna(subset=['Pickup Community Area','Dropoff Community Area'])
