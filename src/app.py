@@ -89,7 +89,7 @@ app1.layout = html.Div([
     ], style={'margin': '9px'}),
     html.Link(
         rel='stylesheet',
-        href='style.css'
+        href='assets/style.css'
     ),
     dcc.Graph(id='map-graph')  # Graph
 ], style={'width': '600px', 'height': '400px'})  #   Adjust width and height here
