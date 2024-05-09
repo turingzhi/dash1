@@ -16,6 +16,36 @@ import plotly.express as px
 import pandas as pd
 
 # import the dataset
+
+import pandas as pd
+
+# Define a list of URLs
+urls = [
+    'https://drive.google.com/file/d/19-k-w_16gRIvjVCwo6T9aHEN8oEBOd85/view?usp=share_link',
+    'https://drive.google.com/file/d/1nuFo9cavPYC0_bzCrQ2P0xVFw_KvtGVs/view?usp=share_link'
+    # Add more URLs as needed
+]
+
+# Initialize an empty list to store DataFrames
+dfs = []
+
+# Loop through each URL
+for url in urls:
+    # Modify the URL to use the direct download link
+    url = 'https://drive.google.com/uc?id=' + url.split('/')[-2]
+    
+    # Read the CSV file directly from the URL into a DataFrame
+    df1 = pd.read_csv(url)
+    
+    # Append the DataFrame to the list
+    dfs.append(df1)
+
+# Concatenate all DataFrames into a single DataFrame
+df = pd.concat(dfs, ignore_index=True)
+
+# Now you can work with the combined DataFrame
+#print(combined_df.head())
+
 #df1 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi1.csv")
 
 #df2 = pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi2.csv")
@@ -23,9 +53,9 @@ import pandas as pd
 #df = pd.read_csv('taxi3.csv')
 #df= pd.read_csv("https://raw.githubusercontent.com/turingzhi/dash1/main/taxi3.csv")
 
-url='https://drive.google.com/file/d/19-k-w_16gRIvjVCwo6T9aHEN8oEBOd85/view?usp=share_link'
-url='https://drive.google.com/uc?id=' + url.split('/')[-2]
-df = pd.read_csv(url)
+#url='https://drive.google.com/file/d/19-k-w_16gRIvjVCwo6T9aHEN8oEBOd85/view?usp=share_link'
+#url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+#df = pd.read_csv(url)
 
 # Merge the DataFrames based on a common column (e.g., 'key_column')
 # Replace 'key_column' with the actual column(s) you want to use for merging
