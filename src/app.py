@@ -5,7 +5,7 @@
 #import matplotlib.patches as patches
 #import matplotlib.gridspec as gridspec
 #import matplotlib as mpl
-#import plotly.express as px
+import plotly.express as px
 #import plotly.graph_objects as go
 
 #import seaborn as sns
