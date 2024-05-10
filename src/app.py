@@ -21,16 +21,10 @@ import pandas as pd
 
 # Define a list of URLs
 urls = [
-    'https://drive.google.com/file/d/19-k-w_16gRIvjVCwo6T9aHEN8oEBOd85/view?usp=share_link',
-    'https://drive.google.com/file/d/1nuFo9cavPYC0_bzCrQ2P0xVFw_KvtGVs/view?usp=share_link',
-    'https://drive.google.com/file/d/1iWT7rLqu_V9-IHn3J9F6iIYTHD1G_ILo/view?usp=share_link',
-    #'https://drive.google.com/file/d/1vXgudhkOpKp09X2PyOcKFWmmV6c5AGOm/view?usp=share_link',
-    #'https://drive.google.com/file/d/1W9u4Ho8orcMaNI9V0qK49tlxjAwcCtEr/view?usp=share_link',
-    #'https://drive.google.com/file/d/1cP-B8HTRjiWXi7J-aKLI_n1vZFU_koLl/view?usp=share_link'
-    #'https://drive.google.com/file/d/1f0NjWwQAzrXHl8mA_d5IniUfxaPR5BF1/view?usp=share_link',
-    #'https://drive.google.com/file/d/1xgluvB1ZlhvvVQoO_XZZWXqGEH3IK3Pj/view?usp=share_link',
-    #'https://drive.google.com/file/d/1_8ySbnwcK9XYaIKMcNVq4H4hnbAtE7yz/view?usp=share_link',
-    #'https://drive.google.com/file/d/1_8ySbnwcK9XYaIKMcNVq4H4hnbAtE7yz/view?usp=share_link', #10
+    'https://drive.google.com/file/d/1d7SlEbZm8saMBGtHxCJ8va-9Xt9inpdb/view?usp=share_link',
+    'https://drive.google.com/file/d/1Kuiecq8xx7uxJ_rIocUIqtRMBmkwp9Eq/view?usp=share_link',
+    'https://drive.google.com/file/d/1vzC17t6ibSJ78rLUa8Numjd3d8buvSa-/view?usp=share_link'
+  
     # Add more URLs as needed
 ]
 
