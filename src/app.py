@@ -80,7 +80,7 @@ app1 = Dash(
     __name__,
     assets_external_path='https://github.com/turingzhi/dash1style/style.css'
 )
-app.scripts.config.serve_locally = False
+app1.scripts.config.serve_locally = False
 
 
 server = app1.server
