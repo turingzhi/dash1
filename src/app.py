@@ -21,9 +21,10 @@ import pandas as pd
 
 # Define a list of URLs
 urls = [
-    'https://drive.google.com/file/d/1d7SlEbZm8saMBGtHxCJ8va-9Xt9inpdb/view?usp=share_link',
-    'https://drive.google.com/file/d/1Kuiecq8xx7uxJ_rIocUIqtRMBmkwp9Eq/view?usp=share_link',
-    'https://drive.google.com/file/d/1vzC17t6ibSJ78rLUa8Numjd3d8buvSa-/view?usp=share_link'
+    'https://drive.google.com/file/d/1kB7Q4vJFOPOuvYgjUh1D6ekqJxNXfFut/view?usp=share_link',
+    'https://drive.google.com/file/d/1c8RSRc0_bEwB8o0jmxEGP3SNlVGOLtKX/view?usp=share_link',
+    'https://drive.google.com/file/d/1vX1IZg2v59m3bbXbiyOz9BigBhYejcnq/view?usp=share_link',
+    'https://drive.google.com/file/d/1CYh0mua4LTEUsPKLM4KbIEdBZZOWkbmm/view?usp=share_link'
   
     # Add more URLs as needed
 ]
@@ -92,7 +93,7 @@ app1.layout = html.Div([
     ], style={'margin': '9px'}),
     html.Link(
         rel='stylesheet',
-        href='../assets/style.css'
+        href='https://github.com/turingzhi/dash1style/style.css'
     ),
     dcc.Graph(id='map-graph')  # Graph
 ], style={'width': '600px', 'height': '400px'})  #   Adjust width and height here
