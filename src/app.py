@@ -63,7 +63,7 @@ df = pd.concat(dfs, ignore_index=True)
 # Replace 'key_column' with the actual column(s) you want to use for merging
 #df = pd.concat([df1, df2], ignore_index=True)
 #df = df.drop(df.columns[:2], axis=1)
-df = df.drop(['Trip ID', 'Taxi ID', 'Trip End Timestamp','Payment Type','Company','Pickup Centroid Location','Dropoff Centroid  Location','Pickup Census Tract','Dropoff Census Tract'], axis=1)
+#df = df.drop(['Trip ID', 'Taxi ID', 'Trip End Timestamp','Payment Type','Company','Pickup Centroid Location','Dropoff Centroid  Location','Pickup Census Tract','Dropoff Census Tract'], axis=1)
 # delete rows containing the Nan
 df = df.dropna(subset=['Pickup Community Area','Dropoff Community Area'])
 # transform the type into 'int'
