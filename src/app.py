@@ -75,7 +75,12 @@ df['Trip Start Timestamp'] = pd.to_datetime(df['Trip Start Timestamp'])
 
 
 # Create Dash app
-app1 = Dash(__name__)
+#app1 = Dash(__name__)
+app1 = Dash(
+    __name__,
+    assets_external_path='https://github.com/turingzhi/dash1style/style.css'
+)
+app.scripts.config.serve_locally = False
 
 
 server = app1.server
