@@ -75,12 +75,8 @@ df['Trip Start Timestamp'] = pd.to_datetime(df['Trip Start Timestamp'])
 
 
 # Create Dash app
-#app1 = Dash(__name__)
-app1 = Dash(
-    __name__,
-    assets_external_path='https://github.com/turingzhi/dash1style/style.css'
-)
-app1.scripts.config.serve_locally = False
+app1 = Dash(__name__)
+
 
 
 server = app1.server
@@ -98,7 +94,7 @@ app1.layout = html.Div([
     ], style={'margin': '9px'}),
     html.Link(
         rel='stylesheet',
-        href='https://github.com/turingzhi/dash1style/style.css'
+        href='style.css'
     ),
     dcc.Graph(id='map-graph')  # Graph
 ], style={'width': '600px', 'height': '400px'})  #   Adjust width and height here
