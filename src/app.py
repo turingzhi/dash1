@@ -97,7 +97,7 @@ app1.layout = html.Div([
         href='style.css'
     ),
     dcc.Graph(id='map-graph')  # Graph
-]
+])
 
 # Callback function, update graph
 @app1.callback(
