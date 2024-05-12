@@ -118,7 +118,7 @@ def update_map(selected_hour):
                            center={"lat": 41.8781, "lon": -87.6298},
                            opacity=0.5,
                            labels={'Population': 'Population Count'})
-    fig.update_layout(height=600, width=600)
+    fig.update_layout(height=600, width=1000)
     return fig
 
 # Run app
