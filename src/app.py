@@ -97,7 +97,7 @@ app1.layout = html.Div([
         href='style.css'
     ),
     dcc.Graph(id='map-graph')  # Graph
-], style={'width': '600px', 'height': '400px'})  #   Adjust width and height here
+]
 
 # Callback function, update graph
 @app1.callback(
